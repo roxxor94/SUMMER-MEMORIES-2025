@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sommer 2025</title>
+  <style>
+    /* Schwarz überall, keine Ränder, kein Scrollen */
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: #000 !important;
+      overflow: hidden;
+    }
+    /* Zentrierung – super robust */
+    body {
+      display: grid;
+      place-items: center;
+    }
+    /* Video: maximal einpassen, Seitenverhältnis erhalten */
+    video {
+      max-width: 100vw;
+      max-height: 100vh;
+      width: auto;
+      height: auto;
+      object-fit: contain; /* nichts wird abgeschnitten */
+      background: #000;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- 🔁 Dateinamen unten exakt anpassen -->
+  <video autoplay loop muted playsinline>
+    <source src="Summer 2025.mp4" type="video/mp4">
+  </video>
+</body>
+</html>
